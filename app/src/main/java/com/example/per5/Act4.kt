@@ -1,5 +1,6 @@
 package com.example.per5
 
+import android.R.attr.horizontalDivider
 import androidx.compose.foundation.layout.Arrangement
 import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.Row
@@ -96,5 +97,15 @@ fun FormDataDiri(modifier: Modifier){
         ) {
             Text(stringResource(id = R.string.submit))
         }
+        HorizontalDivider(
+            modifier = Modifier.padding(
+                bottom =
+                    dimensionResource(id = R.dimen.padding_medium),
+                top = dimensionResource(
+                    id = R.dimen.padding_medium)
+            ),
+            thickness = dimensionResource(id = R.dimen.divider_tipis),
+            color = Color.DarkGray
+        )
     }
 }
